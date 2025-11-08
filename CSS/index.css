@@ -40,7 +40,7 @@ body {
 .logo p {
     font-size: 1rem;
     font-weight: 600;
-    color: #412151;
+    color: #df7694;
 }
 
 .nav-links {
@@ -61,7 +61,7 @@ body {
 
 li a {
     text-decoration: none;
-    color: #412151;
+    color: #df7694;
     font-weight: 550;
     transition: all 0.3s ease;
 }
@@ -375,18 +375,6 @@ label {
   transform: scale(1.1);
 }
 
-
-footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #412151;
-    color: #ffffff;
-    font-size: 0.8rem;
-}
 
 
 
