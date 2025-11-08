@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background: #f5f5f5;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(12px); /* frosted glass */
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15); /* semi-transparent glass */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 65px;
+}
+
+.logo p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #412151;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    gap: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: #412151;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+#CTO {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #df7694;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+#CTO:hover {
+    background: #ffffff;
+    color: #df7694;
+    transform: scale(1.1);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  z-index: -1;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 120px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    font-family: 'Momo Signature', cursive;
+    color: #df7694;
+
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-left: 50px;
+}
+
+.hero a {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 16px 32px;
+    background-color: #df7694;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.notes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    border: none;
+    gap: 10px;
+    padding: 50px;
+    background: #412151;
+}
+
+.note1 h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    width: 400px;
+    height: auto;
+}
+
+.note2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.note2 p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    width: 600px;
+    height: auto;
+    line-height: 1.5;
+}
+
+.note2 a {
+    padding: 13px;
+    background-color: #ffffff;
+    color: #df7694;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.note2 a:hover {
+    background: #df7694;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 10px;
+}
+
+.why-us h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #333333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.reason:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.reason img {
+    height: 120px;
+}
+
+.reason h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #412151;
+    text-align: center;
+    margin: 0;
+}
+
+.reason p {
+    font-size: 0.95rem;
+    color: #666666;
+    text-align: center;
+    margin: 0;
+}
+
+.appointment {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../ASSETS/appointment.svg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.appointmentform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 600px;
+    padding: 100px;
+}
+
+.appointmentform h2 {
+    font-size: 2rem;
+    color: #412151;
+    font-weight: 700;
+    margin: 0;
+}
+
+.appointmentform p {
+    font-size: 0.9rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointmentform form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    background: url(../ASSETS/gradient.jpg) no-repeat center center/cover;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.appointmentform button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #df7694;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.appointmentform button:hover {
+    background: #ffffff;
+    color: #df7694;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 550;
+    text-align: left;
+    color:#412151;
+}
+
+.appointmentform form input, textarea  {
+    padding: 10px 13px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 60%;
+    font-family: "montserrat", sans-serif;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.whatsappfloat a {
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+  transform: scale(1.1);
+}
+
+
+footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #412151;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+
+
+
+
