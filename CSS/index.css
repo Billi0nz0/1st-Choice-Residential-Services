@@ -117,14 +117,14 @@ a:hover {
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    z-index: -1;
 }
 
 .hero h1 {
@@ -132,7 +132,7 @@ a:hover {
     font-weight: 700;
     color: #ffffff;
     margin: 0;
-    padding-top: 120px;
+    padding-top: 0;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -148,7 +148,7 @@ a:hover {
     color: #ffffff;
     font-weight: 600;
     line-height: 1.5;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 .hero a {
@@ -430,7 +430,7 @@ label {
         padding: 20px;
         gap: 15px;
         border-radius: 0 8px 8px 0;
-        background: rgba(0, 0, 0, 0.705);
+        background: rgb(0, 0, 0);
         color: #ffffff;
         transition: left 0.3s ease-in-out; /* smooth slide */
         z-index: 1;
@@ -552,7 +552,7 @@ label {
         color: #412151;
         font-weight: 700;
         margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.966);
     }
 
     .appointmentform p {
@@ -586,7 +586,7 @@ label {
         padding: 20px;
         gap: 15px;
         border-radius: 0 8px 8px 0;
-        background: rgba(0, 0, 0, 0.705);
+        background: rgb(0, 0, 0);
         color: #ffffff;
         transition: left 0.3s ease-in-out; /* smooth slide */
         z-index: 1;
