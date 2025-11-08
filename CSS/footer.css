@@ -178,6 +178,14 @@ hr {
         gap: 10px;
     }
 
+    .footerabout h2 {
+        font-size: 1.5rem;
+    }
+
+    .footerabout p {
+        font-size: 0.8rem;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
