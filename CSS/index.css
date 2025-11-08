@@ -609,6 +609,10 @@ label {
 
     .hero {
         height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .hero h1 {
@@ -656,7 +660,7 @@ label {
 
     .note1 h2 {
         font-size: 1.3rem;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
