@@ -1,4 +1,4 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     gap: 0;
@@ -607,14 +607,6 @@ label {
         text-decoration: none
     }
 
-    .hero {
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
     .hero h1 {
         font-size: 2rem;
         text-align: center;
@@ -723,6 +715,8 @@ label {
     .appointmentform form {
         width: 95%;
     }
+
+    
 }
 
   
