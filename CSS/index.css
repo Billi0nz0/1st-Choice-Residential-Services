@@ -613,6 +613,7 @@ label {
 
     .hero h1 {
         font-size: 2rem;
+        text-align: center;
     }
     
     .highlight {
@@ -624,6 +625,7 @@ label {
 
     .hero p {
         font-size: 0.8rem;
+        text-align: center;
     }
 
     .note1 h2 {
