@@ -26,6 +26,16 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+.main-header a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-header a:hover {
+    color: #ffffff;
+    transform: scale(0.0);
+}
+
 .logo {
     display: flex;
     flex-direction: row;
