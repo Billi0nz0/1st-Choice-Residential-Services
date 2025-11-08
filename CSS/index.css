@@ -716,6 +716,9 @@ label {
         width: 95%;
     }
 
+    .appointmentform form input, textarea  {
+        width: 90%;
+    }
     
 }
 
