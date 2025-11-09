@@ -391,7 +391,6 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     box-sizing: border-box;
     width: 600px;
     height: auto;
@@ -446,7 +445,7 @@ label {
     transform: scale(1.1);
 }
 
- /* Scroll Animation */
+/* Scroll Animation */
 
 .fade-on-scroll {
     opacity: 0;
@@ -524,6 +523,7 @@ label {
 
     .hero p {
         font-size: 0.8rem;
+        text-align: center;
     }
 
     .note1 h2 {
