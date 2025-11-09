@@ -15,19 +15,21 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="index.html" class="logo">
-            <img src="ASSETS/choice logo.svg" alt="1st Choice Residential Services Logo">
-            <p> 1st Choice <br> Residential Services</p>
-        </a>
+        <div class="logo">
+            <img src="ASSETS/choice logo.svg" alt="1st Choice Residential Services Logo" >
+            <span>1st Choice <br> Residential Services</span>
+        </div>
 
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About Us </a></li>
-                <li><a href="services.html"> Services </a></li>
-                <li><a href="#" id="CTO"> GET IN TOUCH </a></li>
-            </ul>
+        <nav id="myLinks" class="nav-links">
+            <a href="index.html"> Home </a>
+            <a href="#">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#" id="CTO"> GET IN TOUCH </a>
         </nav>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
+                <i class="fas fa-bars"></i>
+        </a>
     </header>
 <section>
     
@@ -81,5 +83,6 @@
 
     <footer id="footer"></footer>
     <script src="JAVASCRIPT/footer.js"></script>
+    <script src="JAVASCRIPT/nav.js"></script>
 </body>
 </html>

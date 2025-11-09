@@ -417,6 +417,37 @@ label {
     transition: all 0.3s ease;
 }
 
+.did-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.did-you-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 700px;
+    background: #df76942a;
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.did-you img {
+    width: 200px;
+    height: auto;  
+    border-radius: 25px  
+}
+
+.did-you-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -428,12 +459,12 @@ label {
     border-radius: 50%;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .whatsappfloat a {
@@ -649,6 +680,10 @@ label {
     .cta-button {
         font-size: 1rem;
     }
+
+    .did-you-content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -695,8 +730,23 @@ label {
         text-decoration: none
     }
 
+    .hero {
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        background:url(../ASSETS/hero/1.jpg) ;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     
@@ -710,6 +760,10 @@ label {
     .hero p {
         font-size: 0.8rem;
         text-align: center;
+    }
+
+    .hero a {
+        width: 70%;
     }
 
     .note1 h2 {
@@ -766,12 +820,11 @@ label {
         position: relative;
         width: 100%;
         height: auto;
-        background: url(../ASSETS/appointment.svg) no-repeat center/cover;
+        background: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 5px;
         opacity: 0.8;
     }
 
@@ -780,6 +833,9 @@ label {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: auto;
+        background: radial-gradient(circle at top left, #412151, #6a1b9a, #000000);
         gap: 10px;
         margin: 0px;
         padding: 20px;
@@ -787,15 +843,14 @@ label {
 
     .appointmentform h2 {
         font-size: 1.5rem;
-        color: #412151;
+        color: #ffffff;
         font-weight: 700;
         margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .appointmentform p {
         font-size: 0.9rem;
-        color: #df7694;
+        color: #ffffff;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -804,8 +859,12 @@ label {
         width: 95%;
     }
 
-    .appointmentform form input, textarea  {
-        width: 90%;
+    .appointmentform form input   {
+        width: 100%;
+    }
+
+    .appointmentform textarea {
+        width: 100%;
     }
 
     .content {
@@ -826,23 +885,70 @@ label {
 
     .article-note  {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 
     .article-note h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     .article-note p {
-        font-size: 0.8rem;
-        text-align: center;
+        font-size: 0.9rem;
+        text-align: justify;
     }
 
     .cta-button {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
-    
+
+    .did-you {
+        padding: 30px;
+    }
+
+    .did-you {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .did-you-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 700px;
+        background: #df76942a;
+        border-radius: 25px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .did-you img {
+        width: 300px;
+        height: auto;  
+        border-radius: 25px; 
+    }
+
+    .did-you-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .did-you-text h2 {
+        color: #412151;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .did-you-text p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
 }
 
   
