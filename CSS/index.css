@@ -739,6 +739,7 @@ label {
         justify-content: center;
         align-items: center;
         margin-top: 85px;
+        padding: 30px;
         background:url(../ASSETS/hero/1.jpg) ;
         background-position: top;
         background-repeat: no-repeat;
