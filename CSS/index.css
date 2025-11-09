@@ -364,6 +364,60 @@ label {
     font-family: "montserrat", sans-serif;
 }
 
+.article {
+    padding: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: auto;
+    background: #df76942a;
+    gap: 100px;
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 450px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.article-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 600px;
+    height: auto;
+    gap: 20px;
+}
+
+.article-note h2 {
+    font-size: 2rem;
+    color: #412151;
+}
+
+.article-note p {
+    text-align: center;
+}
+
+.cta-button {
+    padding: 13px;
+    background-color: #df7694;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
 .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -552,7 +606,6 @@ label {
         color: #412151;
         font-weight: 700;
         margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.966);
     }
 
     .appointmentform p {
@@ -560,6 +613,41 @@ label {
         color: #333333;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article-note  {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .article-note h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .article-note p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cta-button {
+        font-size: 1rem;
     }
 }
 
@@ -718,6 +806,41 @@ label {
 
     .appointmentform form input, textarea  {
         width: 90%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article-note  {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .article-note h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .article-note p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
     }
     
 }
