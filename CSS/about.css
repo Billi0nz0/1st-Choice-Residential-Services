@@ -395,6 +395,20 @@ a:hover {
         text-decoration: none
     }
 
+    .aboutus {
+        background: url(../ASSETS/ABOUTIMG.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        margin-top: 85px;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .aboutus h1 {
         font-size: 1.2rem;
         color: #412151;
