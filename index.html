@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://1chrs.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">   
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/overlay.css">
     <link rel="stylesheet" href="CSS/popup.css"> 
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="icon" href="ASSETS/favicon (1).svg" type="image/x-icon">
@@ -121,11 +122,11 @@
             </div>
     </section>
 
-    <section id="appointment" class="appointment fade-on-scroll">
+    <section id="appointment" class="appointment fade-on-scroll" id='appointmentForm'>
         <div class="appointmentform">
             <h2> Book an Appointment </h2>
             <p> Schedule a convenient time to meet with our care team.</p>
-            <form id="appointmentForm" method="post" action="#">
+            <form id="appointmentForm" method="POST" action="#">
                 <label> Full Name </label>
                 <input type="text" name="name" class="name" autocomplete="on" placeholder="Full Name" required>
 
@@ -177,7 +178,7 @@
         <div class="popup-content">
             <span class="close-btn">&times;</span>
 
-            <form id="contactForm" method="post">
+            <form id="contactForm" method="POST">
             <h2>Get in Touch</h2>
 
             <label for="name">Full Name</label>
@@ -194,12 +195,22 @@
         </div>
     </div>
 
+    <!-- Global spinner/overlay -->
+    <div id="emailOverlay" class="email-overlay" aria-hidden="true">
+        <div class="email-overlay__box" role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p id="emailOverlayMessage">Sending…</p>
+            <button id="emailOverlayClose" class="hidden">Close</button>
+        </div>
+    </div>
+
     <footer id="footer"></footer>
     <script src="JAVASCRIPT/imgfade.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="JAVASCRIPT/nav.js"></script>
     <script src="JAVASCRIPT/footer.js"></script>
     <script src="JAVASCRIPT/scrolleffect.js"></script>
     <script src="JAVASCRIPT/popup.js"></script>
+    <script src="JAVASCRIPT/emailjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body>
 </html>

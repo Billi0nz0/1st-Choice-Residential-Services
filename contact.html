@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">    
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/popup.css"> 
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/overlay.css">
     <link rel="icon" href="ASSETS/favicon (1).svg" type="image/x-icon">
 </head>
 <body>
@@ -59,7 +60,7 @@
 
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" id='contactForm'>
             <h3> Send Us a Message </h3>
             <form action="#" method="post">
                 <label for="name"> Name </label>
@@ -89,7 +90,7 @@
         <div class="popup-content">
             <span class="close-btn">&times;</span>
 
-            <form id="contactForm" method="post">
+            <form id="contactForm" method="POST">
             <h2>Get in Touch</h2>
 
             <label for="name">Full Name</label>
@@ -106,9 +107,20 @@
         </div>
     </div>
 
+    <!-- Global spinner/overlay -->
+    <div id="emailOverlay" class="email-overlay" aria-hidden="true">
+        <div class="email-overlay__box" role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p id="emailOverlayMessage">Sending…</p>
+            <button id="emailOverlayClose" class="hidden">Close</button>
+        </div>
+    </div>
+
     <footer id="footer"></footer>
     <script src="JAVASCRIPT/footer.js"></script>
     <script src="JAVASCRIPT/nav.js"></script>
     <script src="JAVASCRIPT/popup.js"></script>
+    <script src="JAVASCRIPT/emailjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body>
 </html>

@@ -106,27 +106,38 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
 
+            <form id="contactForm" method="POST">
+            <h2>Get in Touch</h2>
 
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
+            <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Global spinner/overlay -->
+    <div id="emailOverlay" class="email-overlay" aria-hidden="true">
+        <div class="email-overlay__box" role="status" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p id="emailOverlayMessage">Sending…</p>
+            <button id="emailOverlayClose" class="hidden">Close</button>
+        </div>
+    </div>
 
 
 
