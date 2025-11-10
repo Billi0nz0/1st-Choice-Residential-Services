@@ -396,14 +396,15 @@ a:hover {
     }
 
     .aboutus h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #412151;
         line-height: 3;
     }
 
     .aboutus p {
         font-size: 2rem;
-        color: #412151;
+        color: #ffffff;
+        background: #00000065;
     }
 
     .aboutus hr {
@@ -411,7 +412,7 @@ a:hover {
     }
 
     .about-contact a {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .mission-statement h1 {
@@ -439,14 +440,23 @@ a:hover {
         text-decoration: underline;
     }
 
-    .servicecards {
-       width: 100%;
+    .servicecard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 25px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 
  
     .servicecard img {
-        width: 160px;
-        height: 200px;
+        width: 270px;
+        height: auto;
         border-radius: 15px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
@@ -455,11 +465,13 @@ a:hover {
         font-size: 1rem;
         line-height: 1.2;
         color: #412151;
+        text-align: center;
     }
 
     .servicecard p {
         font-size: 0.8rem;
         color: #555555;
+        text-align: center;
     }
 }
 
