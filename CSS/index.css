@@ -355,7 +355,16 @@ label {
     color:#412151;
 }
 
-.appointmentform form input, textarea  {
+.appointmentform form input   {
+    padding: 10px 13px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 60%;
+    font-family: "montserrat", sans-serif;
+}
+
+.appointmentform form textarea {
     padding: 10px 13px;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
