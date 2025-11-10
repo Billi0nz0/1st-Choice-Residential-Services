@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">    
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/popup.css"> 
     <link rel="icon" href="ASSETS/favicon (1).svg" type="image/x-icon">
 </head>
 <body>
@@ -47,7 +48,7 @@
             <div class="card">
                 <i class="fa-solid fa-phone"></i>
                 <h3> Phone </h3>
-                <p> (123) 456-7890 </p>
+                <a href="tel: 12345678"> (123) 456-7890 </a>
             </div>
 
             <div class="card">
@@ -70,6 +71,8 @@
                 <label for="message"> Message </label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
+                <p> For details about how we will use your information, please see our <a href="#"> privacy policy. </a></p>
+
                 <button type="submit"> Submit </button>
             </form>
         </div>
@@ -81,8 +84,31 @@
         </a>
     </div>
 
+     <!-- Popup Form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+
+            <form id="contactForm" method="post">
+            <h2>Get in Touch</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
     <footer id="footer"></footer>
     <script src="JAVASCRIPT/footer.js"></script>
     <script src="JAVASCRIPT/nav.js"></script>
+    <script src="JAVASCRIPT/popup.js"></script>
 </body>
 </html>

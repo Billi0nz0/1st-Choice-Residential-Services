@@ -193,12 +193,31 @@ a:hover {
     gap: 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
     font-family: "Space Grotesk", sans-serif;
+}
+
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+}
+
+.contact-form p {
+    color:#555555;
+}
+
+.contact-form a {
+    text-decoration: underline;
+    color:#df7694;
+    font-weight: bold;
 }
 
 .contact-form button {
