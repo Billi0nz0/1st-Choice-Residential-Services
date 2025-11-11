@@ -105,163 +105,20 @@ a:hover {
     color: #df7694;
 }
 
-.map-container {
-    padding-top: 80px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
+.fade-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-    background: transparent;
-    width: 90%;
-    border-radius: 12px;
-}
-
-.info-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 400px;
-}
-
-.info-cards h2 {
-    font-size: 2rem;
-    color: #412151;
-    margin: 0;
-}
-
-.info-cards p {
-    font-size: 1rem;
-    color: #555555;
-    margin: 0;
-}
-
-.info-cards .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-}
-
-.card i {
-    font-size: 22px;
-    color: #412151;
-}
-
-.card a {
-    font-size: 1rem;
-    color: #df7694;
-    text-decoration: none;
-}
-
-.card a:hover {
-    text-decoration: underline;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 400px;
-}
-
-.contact-form h3 {
-    font-size: 1.8rem;
-    color: #412151;
-    text-align: center;
-    margin: 0;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: "Space Grotesk", sans-serif;
-}
-
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: "Space Grotesk", sans-serif;
-    width: 100%;
-}
-
-.contact-form p {
-    color:#555555;
-}
-
-.contact-form a {
-    text-decoration: underline;
-    color:#df7694;
-    font-weight: bold;
-}
-
-.contact-form button {
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background-color: #df7694;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.whatsappfloat a {
-  text-decoration: none;
-}
-
-.whatsapp-float:hover {
-  background-color: #1ebe57;
-  transform: scale(1.1);
-}
-
-
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .logo span {
         font-size: 1rem;
     }
@@ -290,10 +147,6 @@ a:hover {
         z-index: 1;
     }
 
-    .main-header, .nav-links {
-        max-width: 100%;
-    }
-
     .nav-links.show {
         left: 0; /* slide into view */
     }
@@ -304,33 +157,16 @@ a:hover {
         font-size: 0.8rem;
         text-decoration: none
     }
-
-    .info-cards h2 {
-        text-align: center;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .contact-form {
-        box-sizing: border-box;
-        border: 4px solid #b8b8b8;
-        border-radius: 25px;
-        padding: 25px;
-    }
-
 }
+
+
+
 
 @media (max-width: 480px) {
     .logo {
         width: 60%;
     }
-    
+
     .logo span {
         font-size: 0.9rem;
     }
@@ -373,31 +209,4 @@ a:hover {
         font-size: 0.8rem;
         text-decoration: none
     }
-
-    .info-cards {
-        padding: 25px;
-    }
-
-    .info-cards p {
-        text-align:  center;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .contact-form {
-        box-sizing: border-box;
-        border: 4px solid #b8b8b8;
-        border-radius: 25px;
-        padding: 25px;
-        width: 100%;
-    }
-
 }

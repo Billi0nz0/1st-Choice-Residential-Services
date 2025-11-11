@@ -363,6 +363,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        width: 60%;
+    }
+    
     .logo span {
         font-size: 0.9rem;
     }
