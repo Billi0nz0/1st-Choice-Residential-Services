@@ -101,9 +101,187 @@ a:hover {
     transition: color 0.3s ease;
 }
 
-.icon i:hover {
-    color: #df7694;
+.careerpath {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    height: 90vh;
+    gap: 40px;
+    margin-top: 85px;
+    background: url(../ASSETS/career/careerpath.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+.careerpath h2 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: "Carattere", cursive;
+}
+
+.careerpath p {
+    font-size: 2rem;
+    text-align: center;
+    background: #f5f5f59c;
+    color: #412151;
+    
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-contact a {
+    padding: 12px;
+    text-decoration: none;
+    color: #412151de;
+    border: 3.2px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: transparent;
+    width: 90%;
+    border-radius: 12px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+
+.info-cards h2 {
+    font-size: 1.2rem;
+    color: #412151;
+    margin: 0;
+}
+
+.info-cards p {
+    font-size: 2.2rem;
+    color: #555555;
+    margin: 0;
+}
+
+.info-cards .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.card i {
+    font-size: 22px;
+    color: #412151;
+}
+
+.card a {
+    font-size: 1rem;
+    color: #df7694;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 400px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    color: #412151;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+}
+
+.contact-form p {
+    color:#555555;
+}
+
+.contact-form a {
+    text-decoration: underline;
+    color:#df7694;
+    font-weight: bold;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #df7694;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
 
 
 
