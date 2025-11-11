@@ -39,11 +39,11 @@ header {
 }
 
 .logo img {
-    height: 65px;
+    height: 100px;
 }
 
 .logo span {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: #df7694;
 }
@@ -490,7 +490,7 @@ label {
 .fade-on-scroll {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
 }
 
 .fade-on-scroll.visible {
@@ -501,8 +501,9 @@ label {
 
 
 @media (max-width: 768px) {
+
     .logo span {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     .icon {
@@ -696,8 +697,12 @@ label {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        width: 60%;
+    }
+
     .logo span {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     
     .icon {
@@ -875,7 +880,7 @@ label {
         width: 100%;
     }
 
-    .appointmentform textarea {
+    .appointmentform form textarea {
         width: 100%;
     }
 

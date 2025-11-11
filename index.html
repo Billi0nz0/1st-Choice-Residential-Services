@@ -43,7 +43,7 @@
         <a href="#appointment" class="cta-button"> Get Quality Care Today </a>
     </section>
 
-    <section class="notes">
+    <section class="notes fade-on-scroll">
         <div class="note1">
             <h2> 
                 Your loved one’s comfort, 
@@ -65,7 +65,7 @@
 
 
     <section class="fade-on-scroll">
-        <div class="article">
+        <div class="article ">
             <div class="content">
                 <img src="ASSETS/Home care (1).jpg" alt="happy customers">
                 
@@ -90,31 +90,31 @@
     <section class="why-us fade-on-scroll" id="services" >
         <h2> Why Choose 1st Choice Residential Services? </h2>
         <div class="reasons">
-            <div class="reason ">
+            <div class="reason fade-on-scroll">
                 <img src="ASSETS/icons/mental support.svg" alt="#">
                 <h3> Personalized Mental Health Support </h3>
                 <p> Tailored emotional and behavioral care to ease anxiety, build confidence, and create a calm, supportive space. </p>
             </div>
 
-            <div class="reason">
+            <div class="reason fade-on-scroll">
                 <img src="ASSETS/icons/companionship.svg" alt="#">
                 <h3> Companionship & Social Engagement </h3>
                 <p> We keep clients connected through conversation, shared activities, and community engagement that uplift their mood and mind. </p>
             </div>
 
-            <div class="reason">
+            <div class="reason fade-on-scroll">
                 <img src="ASSETS/icons/grooming.svg" alt="#">
                 <h3> Daily Living Assistance </h3>
                 <p>Gentle support with daily routines — from bathing and meals to medication, housekeeping, and mobility support. </p>
             </div>
 
-            <div class="reason">
+            <div class="reason fade-on-scroll">
                 <img src="ASSETS/icons/medicals.svg" alt="#">
                 <h3> Medical Appointment & Medication Support </h3>
                 <p> Reliable assistance with medications, appointment scheduling, and transport to ensure consistent care. </p>
             </div>
 
-            <div class="reason">
+            <div class="reason fade-on-scroll">
                 <img src="ASSETS/icons/skills.svg" alt="#">
                 <h3> Skill-Building & Developmental Activities </h3>
                 <p> Engaging tasks that nurture creativity, confidence, and independence through learning and interaction. </p>
@@ -135,7 +135,7 @@
                 <input type="email" name="email" class="email" autocomplete="on" placeholder="Email Address" required>
 
                 <label> Phone Number </label>
-                <input type="tel" name="Phone Number" class="Phone" autocomplete="on" placeholder="Phone Number" required>
+                <input type="tel" name="phone" class="Phone" autocomplete="on" placeholder="Phone Number" required>
 
                 <label> Date </label>
                 <input type="date" name="date" class="date" autocomplete="off" placeholder="Preferred Date" required>
@@ -146,14 +146,14 @@
                 <button type="submit" class="cta-button"> SUBMIT </button>
                 <div id="sendBtn"></div>
 
-                <div id="spinner" style="display: none;"> sending.. </div>
+                <div id="spinner" style="display: none;"> SENDING.. </div>
                 <div id="statusMessage" style="display: none;">
             </form>
         </div>
     </section>
 
-    <section>
-        <div class="did-you fade-on-scroll">
+    <section class="fade-on-scroll">
+        <div class="did-you">
             <div class="did-you-content">
                 <img src="ASSETS/DID YOU KNOW.jpg" alt="down syndrome">
                 
@@ -172,11 +172,7 @@
         </div>
     </section>
 
-    <div class="whatsappfloat">
-        <a href="https://wa.me/2348012345678" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-    </div>
+    <footer id="footer"></footer>
 
     <!-- Popup Form -->
     <div id="popupForm" class="popup">
@@ -203,23 +199,13 @@
         </div>
     </div>
 
-    <!-- Global spinner/overlay -->
-    <div id="emailOverlay" class="email-overlay" aria-hidden="true">
-        <div class="email-overlay__box" role="status" aria-live="polite">
-            <div class="spinner" aria-hidden="true"></div>
-            <p id="emailOverlayMessage">Sending…</p>
-            <button id="emailOverlayClose" class="hidden">Close</button>
-        </div>
-    </div>
-
-
-    <footer id="footer"></footer>
+    
+    <script src="JAVASCRIPT/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="JAVASCRIPT/emailjs.js"></script>
     <script src="JAVASCRIPT/imgfade.js"> </script>
-    <script src="JAVASCRIPT/nav.js"></script>
-    <script src="JAVASCRIPT/footer.js"></script>
     <script src="JAVASCRIPT/scrolleffect.js"></script>
+    <script src="JAVASCRIPT/nav.js"></script>
     <script src="JAVASCRIPT/popup.js"></script>
 </body>
 </html>

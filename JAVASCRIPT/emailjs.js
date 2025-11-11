@@ -24,7 +24,7 @@
         spinner.style.display = "none";
         statusMessage.style.display = "block";
         statusMessage.style.color = "green";
-        statusMessage.textContent = "Message sent successfully! Check your inbox for confirmation.";
+        statusMessage.textContent = "Message sent successfully!";
         form.reset();
       })
       .catch((error) => {

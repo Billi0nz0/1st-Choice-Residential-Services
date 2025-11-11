@@ -39,11 +39,11 @@ header {
 }
 
 .logo img {
-    height: 65px;
+    height: 100px;
 }
 
 .logo span {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: #df7694;
 }
@@ -238,6 +238,17 @@ a:hover {
 
 .servicecard p {
     color: #555555;
+}
+
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.fade-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 780px) {

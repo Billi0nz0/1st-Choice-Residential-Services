@@ -60,9 +60,9 @@
 
         </div>
 
-        <div class="contact-form" '>
+        <div class="contact-form">
             <h3> Send Us a Message </h3>
-            <form action="#" method="post" id='contact-form'>
+            <form action="https://formspree.io/f/xpwkzzng" method="post">
                 <label for="name"> Name </label>
                 <input type="text" id="name" name="name" required>
 
@@ -90,7 +90,7 @@
         <div class="popup-content">
             <span class="close-btn">&times;</span>
 
-            <form id="contact-form" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/xpwkzzng"  method="POST">
             <h2>Get in Touch</h2>
 
             <label for="name">Full Name</label>
@@ -107,16 +107,48 @@
         </div>
     </div>
 
-    <!-- Global spinner/overlay -->
-    <div id="emailOverlay" class="email-overlay" aria-hidden="true">
-        <div class="email-overlay__box" role="status" aria-live="polite">
-            <div class="spinner" aria-hidden="true"></div>
-            <p id="emailOverlayMessage">Sending…</p>
-            <button id="emailOverlayClose" class="hidden">Close</button>
+    <footer>
+    <section class="footer-content">
+        <img src="ASSETS/choice logo.svg" alt="1st Choice Residential Services Logo">
+        <div class="footerabout">
+            <h2> 1st Choice Residential Services </h2>
+            <p>
+                Providing compassionate, reliable in-home care. 
+            </p>
+        </div>
+        
+        <div class="footernav">
+            <a href="about.html"> About </a>
+            <div class="separator">|</div>
+            <a href="contact.html"> Contact </a>
+            <div class="separator">|</div>
+            <a href="https://docs.google.com/document/d/1B3hsm-_j39IIfDeHCseR6FihVuSTWch7w4VGJMtmdJU/edit?usp=sharing"> Terms </a>
+            <div class="separator">|</div>
+            <a href="https://docs.google.com/document/d/1aB6N44c3FaxZdkpEDgmyNG4qFMvrwomtn0yMwk_lCDs/edit?usp=sharing"> Privacy Policy</a>
+        </div>
+
+        <div class="socials">
+            <p>Connect With Us |</p>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
 
-    <footer id="footer"></footer>
+    <hr>
+    
+    <footer>
+    <div class="copyright">
+        <p>
+            &copy; <span id="year"></span> 1st Choice Residential Services. All rights reserved.
+        </p>
+    </div>
+
+    <script>
+        
+    </script>
+</footer>
     <script src="JAVASCRIPT/footer.js"></script>
     <script src="JAVASCRIPT/nav.js"></script>
     <script src="JAVASCRIPT/popup.js"></script>
