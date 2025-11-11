@@ -397,6 +397,24 @@ label {
         text-decoration: none
     }
 
+    .careerpath h2 {
+        font-size: 3rem;
+    }
+
+    .careerpath p {
+        font-size: 1.5rem;
+    }
+
+    .about-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-contact a {
+        font-size: 0.9rem;
+    }
+
     .contact-form {
         width: 100%;
         flex-wrap: wrap;
