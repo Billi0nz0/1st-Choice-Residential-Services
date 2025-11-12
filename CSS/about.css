@@ -45,7 +45,7 @@ header {
 .logo span {
     font-size: 1.15rem;
     font-weight: 600;
-    color: #df7694;
+    color: #35807e;
 }
 
 .nav-links {
@@ -60,9 +60,9 @@ header {
 .nav-links a {
     display: flex;
     flex-direction: row;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-decoration: none;
-    color: #df7694;
+    color: #35807e;
     font-weight: 550;
     transition: all 0.3s ease;
 }
@@ -70,7 +70,7 @@ header {
 #CTO {
     padding: 12px;
     border-radius: 10px;
-    background-color: #df7694;
+    background-color: #35807e;
     color: #ffffff;
     transition: all 0.3s ease;
 }
@@ -82,7 +82,7 @@ a:hover {
 
 #CTO:hover {
     background: #ffffff;
-    color: #df7694;
+    color: #35807e;
     transform: scale(1.1);
 }
 
@@ -91,7 +91,7 @@ a:hover {
     font-size: 22px;
     cursor: pointer;
     z-index: 1100;
-    color: #df7694;
+    color: #35807e;
 }
 
 .icon i {
@@ -99,10 +99,6 @@ a:hover {
     text-decoration: none;
     margin: 0 8px;
     transition: color 0.3s ease;
-}
-
-.icon i:hover {
-    color: #df7694;
 }
 
 .aboutus {
@@ -120,18 +116,19 @@ a:hover {
 }
 
 .aboutus h1 {
-    font-size: 1.6rem;
-    color: #412151;
+    font-size: 2rem;
+    color: #35807e;
     line-height: 3;
 }
 
 .aboutus p {
-    font-size: 2.5rem;
-    color: #412151;
+    font-size: 3rem;
+    color: #35807e
 }
 
 .aboutus hr {
     width: 30%;
+    color: #35807e;
 }
 
 .about-contact {
@@ -145,13 +142,13 @@ a:hover {
     border-radius: 15px;
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.05rem;
-    background: #df7694;
+    font-size: 1.3rem;
+    background: #35807e;
     transition: color 0.5s ease-in-out;
 }
 
 .about-contact a:hover {
-    color:#df7694;
+    color:#35807e;
     background: #ffffff;
 }
 
@@ -168,14 +165,14 @@ a:hover {
 .mission-statement h1 {
     width: 900px;
     font-weight: normal;
-    color: #412151;
-    font-size: 2.3rem;
+    color: #35807e;
+    font-size: 2.5rem;
     margin-bottom: 25px;
 }
 
 .mission-statement p {
     width: 900px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 2;
     color: #555555;
 }
@@ -189,7 +186,7 @@ a:hover {
 }
 
 .ourservices h1 {
-    color:#412151;
+    color:#35807e;
     font-size: 2.5rem;
     font-weight: 300;
     text-decoration: underline;
@@ -219,7 +216,7 @@ a:hover {
 }
 
 .servicecard img {
-    width: 250px;
+    width: 300px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -231,12 +228,14 @@ a:hover {
 }
 
 .servicecard h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.2;
-    color: #412151;
+    color: #35807e;
+    margin-bottom: 10px;
 }
 
 .servicecard p {
+    font-size: 1.1rem;
     color: #555555;
 }
 
@@ -251,14 +250,14 @@ a:hover {
     transform: translateY(0);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
     .logo span {
-        font-size: 0.9rem;
+        font-size: 1.15rem;
     }
     
     .icon {
         display: block; /* Show hamburger */
-        color: #df7694;
+        color: #35807e;
         z-index: 1000;
     }
 
@@ -291,19 +290,20 @@ a:hover {
     .nav-links {
         color: #ffffff;
         padding: 8px 0;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         text-decoration: none
     }
 
     .aboutus h1 {
         font-size: 1.7rem;
-        color: #412151;
+        color: #35807e;
         line-height: 3;
     }
 
     .aboutus p {
         font-size: 2.5rem;
-        color: #412151;
+        color: #35807e;
+        background: #ffffff80;
     }
 
     .aboutus hr {
@@ -311,7 +311,7 @@ a:hover {
     }
 
     .about-contact a {
-       font-size: 0.8rem;
+       font-size: 1.2rem;
     }
 
     .mission-statement h1 {
@@ -332,39 +332,46 @@ a:hover {
     }
 
     .ourservices h1 {
-        color:#412151;
+        color:#35807e;
         font-size: 2.5rem;
         font-weight: 300;
         text-decoration: underline;
     }
 
     .servicecards {
-       width: 100%;
+       width: 90%;
+       display: flex;
     }
 
+    .servicecard {
+        display: flex;
+        flex-direction: column;
+    }
  
     .servicecard img {
-        width: 200px;
+        width: 250px;
         height: auto;
         border-radius: 15px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 
     .servicecard h2 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 1.2;
-        color: #412151;
+        color:#35807e;
+        text-align: center;
     }
 
     .servicecard p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         color: #555555;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        width: 60%;
+        width: 100%;
     }
     
     .logo span {
@@ -373,7 +380,7 @@ a:hover {
     
     .icon {
         display: block; /* Show hamburger */
-        color: #df7694;
+        color:#35807e;
         z-index: 1000;
     }
 
@@ -426,7 +433,7 @@ a:hover {
 
     .aboutus h1 {
         font-size: 1.2rem;
-        color: #412151;
+        color:#35807e;
         line-height: 3;
     }
 
@@ -441,7 +448,10 @@ a:hover {
     }
 
     .about-contact a {
-        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.2rem;
     }
 
     .mission-statement h1 {
@@ -463,10 +473,14 @@ a:hover {
     }
 
     .ourservices h1 {
-        color:#412151;
-        font-size: 1.7rem;
+        color:#35807e;
+        font-size: 2rem;
         font-weight: 300;
         text-decoration: underline;
+    }
+
+    .mission-statement p {
+        font-size: 1.3rem;
     }
 
     .servicecard {
@@ -491,14 +505,14 @@ a:hover {
     }
 
     .servicecard h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.2;
-        color: #412151;
+        color:#35807e;
         text-align: center;
     }
 
     .servicecard p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         color: #555555;
         text-align: center;
     }
