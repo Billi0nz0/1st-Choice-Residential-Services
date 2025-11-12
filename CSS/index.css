@@ -42,7 +42,7 @@ header {
 .logo span {
     font-size: 1.15rem;
     font-weight: 600;
-    color: #74c476;
+    color: #35807d;
 }
 
 .nav-links {
@@ -59,7 +59,7 @@ header {
     flex-direction: row;
     font-size: 1rem;
     text-decoration: none;
-    color: #41ab5d;
+    color: #35807d;
     font-weight: 550;
     transition: all 0.3s ease;
 }
@@ -67,7 +67,7 @@ header {
 #CTO {
     padding: 12px;
     border-radius: 10px;
-    background-color: #74c476;
+    background-color: #35807d;
     color: #ffffff;
     transition: all 0.3s ease;
 }
@@ -79,7 +79,7 @@ a:hover {
 
 #CTO:hover {
     background: #ffffff;
-    color: #41ab5d;
+    color: #35807d;
     transform: scale(1.1);
 }
 
@@ -88,7 +88,7 @@ a:hover {
     font-size: 22px;
     cursor: pointer;
     z-index: 1100;
-    color: #74c476;
+    color: #35807d;
 }
 
 .icon i {
@@ -132,7 +132,7 @@ a:hover {
 
 .highlight {
     font-family: 'Molle', cursive;
-    color: #74c476;
+    color: #35807d;
 }
 
 .hero p {
@@ -146,7 +146,7 @@ a:hover {
 .hero a {
     margin-top: 20px;
     padding: 16px 32px;
-    background-color: #74c476;
+    background-color: #35807d;
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -165,7 +165,7 @@ a:hover {
     border: none;
     gap: 10px;
     padding: 10px;
-    background:#74c476;
+    background:#35807d;
 }
 
 .note1 h2 {
@@ -194,7 +194,7 @@ a:hover {
 .note2 a {
     padding: 13px;
     background-color: #ffffff;
-    color: #238b45;
+    color: #35807d;
     text-decoration: none;
     font-weight: 550;
     font-size: 1.3rem;
@@ -203,7 +203,7 @@ a:hover {
 }
 
 .note2 a:hover {
-    background:#238b45;
+    background:#35807d;
     color: #ffffff;
     transform: scale(1.1);
 }
@@ -219,7 +219,7 @@ a:hover {
     flex-direction: row;
     box-sizing: border-box;
     width: auto;
-    background: #c7e9c0;
+    background: #35807e7a;
     gap: 100px;
     padding: 20px;
     border-radius: 25px;
@@ -244,18 +244,18 @@ a:hover {
 
 .article-note h2 {
     font-size: 2.5rem;
-    color: #41ab5d;
+    color: #35807d;
 }
 
 .article-note p {
     font-size: 1.5rem;
     text-align: center;
-    color:#333333;
+    color:#ffffff;
 }
 
 .cta-button {
     padding: 13px;
-    background-color: #41ab5d;
+    background-color: #35807d;
     color: #ffffff;
     text-decoration: none;
     font-weight: 550;
@@ -275,7 +275,7 @@ a:hover {
 .why-us h2 {
     font-size: 2.8rem;
     font-weight: 550;
-    color:#238b45;
+    color:#35807d;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -312,7 +312,7 @@ a:hover {
 .reason h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #41ab5d;
+    color: #35807d;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -348,13 +348,13 @@ a:hover {
 
 .appointmentform h2 {
     font-size: 2.5rem;
-    color: #41ab5d;
+    color: #35807d;
     font-weight: 700;
     margin: 0;
 }
 
 .appointmentform p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #333333;
     text-align: center;
     margin-bottom: 20px;
@@ -371,15 +371,15 @@ a:hover {
     height: auto;
     padding: 30px;
     border-radius: 20px;
-    background: #e5f5e0;
+    background: #35807d;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .appointmentform button {
     padding: 10px;
     border-radius: 10px;
-    background-color: #41ab5d;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #35807d;
     font-size: 0.9rem;
     font-weight: 600;
     border: none;
@@ -388,15 +388,15 @@ a:hover {
 }
 
 .appointmentform button:hover {
-    background: #ffffff;
-    color: #41ab5d;
+    background:#fbff00;
+    color: #35807d;
 }
 
 label {
     font-size: 1rem;
     font-weight: 550;
     text-align: left;
-    color: #41ab5d;
+    color: #ffffff;
 }
 
 .appointmentform form input   {
@@ -430,7 +430,7 @@ label {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    border: 5px solid #41ab5d;
+    border: 5px solid #35807d;
     box-sizing: border-box;
     border-radius: 25px;
     padding: 20px;
@@ -444,7 +444,7 @@ label {
 
 .career-notes h1 {
     margin-bottom: 60px;
-    color: #41ab5d;
+    color: #35807d;
     font-size: 3rem;
     font-weight: 400;
 }
@@ -460,14 +460,14 @@ label {
     padding: 12px;
     text-decoration: none;
     color: #555555;
-    border: 3px solid #74c476;
+    border: 3px solid #35807d;
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
 .career-notes a:hover {
-    background: #74c476;
+    background: #fbff00;
     transform: scale(1.2);
     transition: all 0.3s ease;
 }
@@ -487,7 +487,7 @@ label {
     gap: 50px;
     width: 700px;
     padding: 20px;
-    background: #c7e9c0;
+    background: #35807e7a;
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -507,11 +507,11 @@ label {
 
 .did-you-text h2 {
     margin-bottom: 10px;
-    color:#41ab5d;
+    color:#ffffff;
 }
 
 .did-you-text p {
-    color: #333333;
+    color: #ffffff;
     font-size: 1.3rem;
     margin-left: 10px;
 }
