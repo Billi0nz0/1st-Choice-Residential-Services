@@ -703,7 +703,7 @@ label {
 
     .career-notes h1 {
         margin-bottom: 30px;
-        color:#238b45;
+        color:#35807e;
         font-size: 2rem;
         font-weight: 400;
         text-align: center;
@@ -723,7 +723,7 @@ label {
         padding: 12px;
         text-decoration: none;
         color: #555555;
-        border: 3px solid #238b45;
+        border: 3px solid #35807e;
         border-radius: 15px;
     }
 
@@ -778,7 +778,7 @@ label {
     
     .icon {
         display: block; /* Show hamburger */
-        color:#41ab5d;
+        color:#35807e;
         z-index: 1000;
     }
 
@@ -838,7 +838,7 @@ label {
     
     .highlight {
         font-family: 'Molle', cursive;
-        color:#41ab5d;
+        color:#35807e;
         font-size: 2rem;
         text-align: center;
     }
@@ -872,7 +872,7 @@ label {
         border: none;
         gap: 10px;
         padding: 25px;
-        background:#74c476;
+        background:#35807e;
     }
 
     .note1 h2 {
@@ -916,7 +916,7 @@ label {
         justify-content: center;
         width: 100%;
         height: auto;
-        background: #238b45;
+        background: #35807e;
         border-radius: 10px;
         gap: 10px;
         margin: 0px;
