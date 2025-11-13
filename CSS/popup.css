@@ -24,12 +24,12 @@
     gap: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     animation: fadeIn 0.3s ease;
-    background: url(../ASSETS/gradient.jpg) no-repeat center center/cover;
+    background:#35807e;
     position: relative;
 }
 
 .popup h2 {
-    color: #412151;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -43,12 +43,19 @@
     font-family: "montserrat", sans-serif;
 }
 
+label {
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-align: left;
+    color: #ffffff;
+}
+
 .popup-content button {
     padding: 10px;
     border-radius: 10px;
-    background-color: #df7694;
-    color: #ffffff;
-    font-size: 0.9rem;
+    background-color: #ffffff;
+    color: #35807e;
+    font-size: 1.1rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -56,8 +63,8 @@
 }
 
 .popup-content button:hover {
-    background: #ffffff;
-    color: #df7694;
+    background: #ffe600;
+    color: #35807e;
 }
 
 /* Close Button */

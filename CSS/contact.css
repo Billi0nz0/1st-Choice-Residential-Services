@@ -39,11 +39,11 @@ header {
 }
 
 .logo img {
-    height: 100px;
+    height: 98px;
 }
 
 .logo span {
-    font-size: 1.15rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #35807e;
 }
@@ -246,7 +246,7 @@ label {
 
 @media (max-width: 780px) {
     .logo span {
-        font-size: 1.15rem;
+        font-size: 1.5rem;
     }
     
     .icon {
@@ -292,6 +292,11 @@ label {
         text-align: center;
     }
 
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -311,11 +316,12 @@ label {
 
 @media (max-width: 480px) {
     .logo {
-        width: 60%;
+        width: 95%;
     }
     
     .logo span {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
+        font-weight: 900;
     }
     
     .icon {
@@ -358,19 +364,11 @@ label {
     }
 
     .info-cards {
-        padding: 50px;
-    }
-
-    .info-cards h2 {
-        text-align: center;
+        width: 100%;
     }
 
     .info-cards p {
-        text-align:  center;
-    }
-
-    .cards {
-        padding: 25px;
+        text-align:  left;
     }
 
     .contact-info {
@@ -379,8 +377,7 @@ label {
         align-items: center;
         justify-content: center;
         gap: 30px;
-
-        padding: 20px;
+        padding: 10px;
     }
 
     .contact-form {

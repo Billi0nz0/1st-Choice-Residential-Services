@@ -36,12 +36,12 @@ header {
 }
 
 .logo img {
-    height: 100px;
+    height: 95px;
 }
 
 .logo span {
-    font-size: 1.15rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 800;
     color: #35807d;
 }
 
@@ -534,7 +534,8 @@ label {
 
 @media (max-width: 768px) {
     .logo span {
-        font-size: 1.15rem;
+        font-size: 1.5rem;
+        font-weight: 900;
     }
     
     .icon {
@@ -769,11 +770,12 @@ label {
 
 @media (max-width: 480px) {
     .logo {
-        width: 60%;
+        width: 98%;
     }
 
     .logo span {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
+        font-weight: 900;
     }
     
     .icon {
