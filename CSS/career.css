@@ -199,11 +199,6 @@ a:hover {
     margin: 0;
 }
 
-.contact-form p {
-    font-size: 1.3rem;
-    text-align: center;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
