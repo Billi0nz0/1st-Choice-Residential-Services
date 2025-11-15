@@ -75,8 +75,8 @@ header {
     transition: all 0.3s ease;
 }
 
-a:hover {
-    color: #ffffff;
+.nav-links a:hover {
+    color:#35807e;
     transform: scale(1.1);
 }
 

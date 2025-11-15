@@ -77,7 +77,7 @@ footer {
 }
 
 .socials i:hover {
-    color:#35807e;
+    color:#3eebe5;
     transform: scale(1.2) rotate(10deg);
 }
 
@@ -99,7 +99,7 @@ footer {
 }
 
 .footernav a:hover {
-    color: #df7694;
+    color: #3eebe5;
     transform: scale(1.2);
 }
 
