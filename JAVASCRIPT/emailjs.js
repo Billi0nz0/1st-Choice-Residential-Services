@@ -1,6 +1,6 @@
 
   // Initialize EmailJS
-  emailjs.init("o42jhG_7_vwiVwlxW");
+  emailjs.init("rlhSxF5_hDOpidefu");
 
   const form = document.getElementById("appointmentForm");
   const spinner = document.getElementById("spinner");
@@ -14,16 +14,16 @@
     statusMessage.style.display = "none";
 
     // 1. Send the main message
-    emailjs.sendForm("service_delbcoz", "template_bqdwaau", form)
+    emailjs.sendForm("service_17q4tv4", "template_1ur97jm", form)
       .then(() => {
         // 2. Send auto-reply to user
-        return emailjs.sendForm("service_delbcoz", "template_pv2ok1o", form);
+        return emailjs.sendForm("service_17q4tv4", "template_pv2ok1o", form);
       })
       .then(() => {
         // Success
         spinner.style.display = "none";
         statusMessage.style.display = "block";
-        statusMessage.style.color = "white";
+        statusMessage.style.color = "green";
         statusMessage.textContent = "Message sent successfully!";
         form.reset();
       })
@@ -36,4 +36,5 @@
         console.error("EmailJS Error:", error);
       });
   });
+
 
