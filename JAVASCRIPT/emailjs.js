@@ -23,8 +23,8 @@
         // Success
         spinner.style.display = "none";
         statusMessage.style.display = "block";
-        statusMessage.style.color = "green";
-        statusMessage.textContent = "Message sent successfully!";
+        statusMessage.style.color = "white";
+        statusMessage.textContent = "Appointment Sucessfully Booked!";
         form.reset();
       })
       .catch((error) => {
@@ -36,6 +36,7 @@
         console.error("EmailJS Error:", error);
       });
   });
+
 
 
 
