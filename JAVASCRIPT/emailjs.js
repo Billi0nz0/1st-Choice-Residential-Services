@@ -14,10 +14,10 @@
     statusMessage.style.display = "none";
 
     // 1. Send the main message
-    emailjs.sendForm("service_17q4tv4", "template_1ur97jm", form)
+    emailjs.sendForm("service_17q4tv4", "template_x9ur96s", form)
       .then(() => {
         // 2. Send auto-reply to user
-        return emailjs.sendForm("service_17q4tv4", "template_pv2ok1o", form);
+        return emailjs.sendForm("service_17q4tv4", "template_1ur97jm", form);
       })
       .then(() => {
         // Success
@@ -36,5 +36,6 @@
         console.error("EmailJS Error:", error);
       });
   });
+
 
 
