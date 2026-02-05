@@ -11,6 +11,7 @@
 
     // Reset status
     spinner.style.display = "block";
+    spinner.style.color = "white"
     statusMessage.style.display = "none";
 
     // 1. Send the main message
@@ -36,6 +37,7 @@
         console.error("EmailJS Error:", error);
       });
   });
+
 
 
 
