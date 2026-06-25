@@ -29,7 +29,7 @@ button {
   padding: 14px 28px;
 
   background: var(--primary);
-  color: var(--light);
+  color: var(--white);
 
   border: none;
   border-radius: 999px;
@@ -107,7 +107,7 @@ img{
   max-width:100%;
 }
 
-a{
+a {
   text-decoration:none;
 }
 
@@ -164,7 +164,7 @@ a{
 }
 
 .nav-links a:hover{
-  color:var(--primary-dark);
+  color:var(--primary-white);
 }
 
 
@@ -225,7 +225,7 @@ a{
 }
 
 .notes{
-  background:var(--primary);
+  background: #3f9691;
   color:white;
 
   display:grid;
@@ -481,74 +481,6 @@ a{
   margin-bottom:15px;
 }
 
-/* POPUP */
-
-.popup{
-  display:none;
-  position:fixed;
-  inset:0;
-
-  background:rgba(0,0,0,.6);
-
-  z-index:9999;
-}
-
-.popup-content{
-  background:white;
-
-  width:min(500px,90%);
-
-  margin:80px auto;
-
-  padding:30px;
-
-  border-radius:var(--radius);
-
-  position:relative;
-}
-
-.close-btn{
-  position:absolute;
-  right:20px;
-  top:15px;
-  font-size:2rem;
-  cursor:pointer;
-}
-
-.popup-content form{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-
-.popup-content input,
-.popup-content textarea{
-  padding:14px;
-  border:1px solid #ddd;
-  border-radius:12px;
-}
-
-/* FOOTER */
-
-footer{
-  background:#111;
-  color:white;
-  padding:50px 20px;
-  text-align:center;
-}
-
-/* ANIMATIONS */
-
-.fade-on-scroll{
-  opacity:0;
-  transform:translateY(30px);
-  transition:1s ease;
-}
-
-.fade-on-scroll.visible{
-  opacity:1;
-  transform:translateY(0);
-}
 
 /* MOBILE */
 
@@ -602,4 +534,15 @@ footer{
   .appointmentform form{
     padding:25px;
   }
+}
+
+@media (max-width:768px){
+    .hero h1 {
+        font-size: 1.85rem;
+    }
+
+    .hero p {
+        font-size:0.9rem;
+        font-style: normal;
+    }
 }

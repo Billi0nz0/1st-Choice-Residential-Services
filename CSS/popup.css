@@ -1,1 +1,372 @@
-.popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgb(0 0 0 / .6);justify-content:center;align-items:center;z-index:1000}.popup-content form{background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;border-radius:15px;width:400px;height:450px;gap:10px;box-shadow:0 5px 15px rgb(0 0 0 / .2);animation:fadeIn 0.3s ease;background:#35807e;position:relative}.popup h2{color:#fff;font-size:2rem;font-weight:700}.popup-content input,textarea{padding:10px 13px;border-radius:10px;box-shadow:0 4px 30px rgb(0 0 0 / .1);border:none;width:60%;font-family:"montserrat",sans-serif}label{font-size:1.2rem;font-weight:550;text-align:left;color:#fff}.popup-content button{padding:10px;border-radius:10px;background-color:#fff;color:#35807e;font-size:1.1rem;font-weight:600;border:none;cursor:pointer;transition:all 0.3s ease}.popup-content button:hover{background:#ffe600;color:#35807e}.close-btn{position:absolute;top:10px;right:15px;font-size:40px;color:#fff;cursor:pointer}@keyframes fadeIn{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}.popup-content h2{font-family:"Space Grotesk",sans-serif;margin-bottom:10px;text-align:center}
+/* =========================
+   POPUP WRAPPER
+========================= */
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.popup.active {
+  display: flex;
+  animation: fadeIn 0.35s ease;
+}
+
+/* =========================
+   POPUP CARD
+========================= */
+
+.popup-content {
+  position: relative;
+  width: min(95%, 450px);
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255,255,255,.3);
+
+  animation: popupScale 0.4s ease;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,.2);
+
+  color: #35807d;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.close-btn:hover {
+  background: #35807d;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* =========================
+   FORM
+========================= */
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+
+  color: #35807d;
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#contact-form label {
+  margin-bottom: 8px;
+  margin-top: 15px;
+
+  color: #fff;
+
+  font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(53,128,125,.2);
+
+  background: rgba(255,255,255,.7);
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: .3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #35807d;
+  box-shadow: 0 0 0 4px rgba(53,128,125,.12);
+}
+
+#contact-form textarea {
+  resize: none;
+  min-height: 130px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.cta-button {
+  margin-top: 25px;
+
+  border: none;
+  cursor: pointer;
+
+  padding: 15px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #35807d,
+    #4fa29f
+  );
+
+  color: #fff;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: .3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(53,128,125,.3);
+}
+
+/* =========================
+   GLASS OVERLAY
+========================= */
+
+.email-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 30px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .35s ease;
+
+  z-index: 100;
+}
+
+.email-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================
+   STATUS BOX
+========================= */
+
+.email-overlay__box {
+  width: min(90%, 320px);
+
+  text-align: center;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,.2);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,.3);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.12),
+    inset 0 1px 0 rgba(255,255,255,.4);
+}
+
+.email-overlay__box h3 {
+  color: #35807d;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.email-overlay__box p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* =========================
+   SPINNER
+========================= */
+
+.spinner {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  border: 4px solid rgba(53,128,125,.2);
+  border-top: 4px solid #35807d;
+
+  animation: spin 1s linear infinite;
+}
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #35807d,
+    #5ec9c4
+  );
+
+  color: white;
+  font-size: 2rem;
+
+  box-shadow: 0 10px 30px rgba(53,128,125,.35);
+}
+
+.hidden {
+  display: none;
+}
+
+/* =========================
+   CLOSE OVERLAY BUTTON
+========================= */
+
+#emailOverlayClose {
+  margin-top: 20px;
+
+  border: none;
+  cursor: pointer;
+
+  padding: 12px 28px;
+
+  border-radius: 999px;
+
+  background: #35807d;
+  color: #fff;
+
+  font-weight: 700;
+
+  transition: .3s ease;
+}
+
+#emailOverlayClose:hover {
+  background: #2d6b68;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes popupScale {
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .popup-content {
+    padding: 30px 20px;
+  }
+
+  #contact-form h2 {
+    font-size: 1.7rem;
+  }
+
+  .email-overlay__box {
+    padding: 25px 20px;
+  }
+
+  .spinner {
+    width: 48px;
+    height: 48px;
+  }
+}
