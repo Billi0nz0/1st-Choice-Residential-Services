@@ -640,6 +640,11 @@ a {
     font-size:16px;
   }
 
+  input[type="date"]{
+    height:50px;
+    font-size:16px; /* prevents iPhone zoom */
+  }
+
   /* Career */
 
   .career{
