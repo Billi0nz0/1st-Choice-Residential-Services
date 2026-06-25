@@ -482,67 +482,252 @@ a {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE IMPROVEMENTS
+========================= */
 
 @media (max-width:768px){
 
-  .icon{
-    display:block;
+  /* Header */
+  .main-header{
+    padding:0 15px;
+    height:80px;
   }
 
+  .logo img{
+    height:60px;
+  }
+
+  .logo span{
+    font-size:.8rem;
+  }
+
+  /* Mobile Navigation */
   .nav-links{
     position:fixed;
-    top:85px;
+    top:80px;
     left:-100%;
     width:260px;
     height:100vh;
 
+    background:#fff;
+
     flex-direction:column;
     justify-content:center;
+    align-items:center;
 
-    background:white;
+    gap:25px;
 
-    box-shadow:var(--shadow);
-
-    transition:.3s;
+    transition:.35s ease;
   }
 
   .nav-links.show{
     left:0;
   }
 
-  .notes,
-  .content,
-  .career-content,
-  .did-you-content{
-    grid-template-columns:1fr;
+  .nav-links a{
+    font-size:1rem;
   }
 
+  .icon{
+    display:block;
+  }
+
+  /* Hero */
+
   .hero{
-    min-height:80vh;
+    min-height:75vh;
+    padding:120px 20px 60px;
+  }
+
+  .hero h1{
+    font-size:2.2rem;
+    line-height:1.2;
   }
 
   .hero p{
     font-size:1rem;
+    margin-bottom:25px;
+  }
+
+  .cta-button{
+    width:100%;
+    max-width:300px;
+  }
+
+  /* Notes */
+
+  .notes{
+    grid-template-columns:1fr;
+    padding:40px 25px;
+    text-align:center;
+    gap:25px;
   }
 
   .note1 h2{
     font-size:1.8rem;
+  }
+
+  .note2 p{
+    font-size:1rem;
+  }
+
+  /* Article */
+
+  .article{
+    padding:50px 15px;
+  }
+
+  .content{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:25px;
+  }
+
+  .article img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+  }
+
+  .article-note{
     text-align:center;
+  }
+
+  .article-note h2{
+    font-size:1.8rem;
+  }
+
+  /* Why Us */
+
+  .why-us{
+    padding:60px 15px;
+  }
+
+  .why-us h2{
+    font-size:2rem;
+    margin-bottom:35px;
+  }
+
+  .reasons{
+    grid-template-columns:1fr;
+  }
+
+  .reason{
+    padding:25px;
+  }
+
+  .reason img{
+    height:80px;
+  }
+
+  /* Appointment */
+
+  .appointment{
+    padding:60px 15px;
+  }
+
+  .appointmentform h2{
+    font-size:2rem;
   }
 
   .appointmentform form{
     padding:25px;
   }
+
+  .appointmentform input,
+  .appointmentform textarea{
+    font-size:16px;
+  }
+
+  /* Career */
+
+  .career{
+    padding:60px 15px;
+  }
+
+  .career-content{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:25px;
+  }
+
+  .career-content img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+  }
+
+  .career-notes{
+    text-align:center;
+  }
+
+  .career-notes h1{
+    font-size:2rem;
+  }
+
+  /* Did You Know */
+
+  .did-you{
+    padding:60px 15px;
+  }
+
+  .did-you-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:20px;
+  }
+
+  .did-you-content img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+  }
+
+  .did-you-text h2{
+    font-size:1.8rem;
+  }
 }
 
-@media (max-width:768px){
-    .hero h1 {
-        font-size: 1.85rem;
-    }
+/* Small Phones */
 
-    .hero p {
-        font-size:0.9rem;
-        font-style: normal;
-    }
+@media (max-width:480px){
+
+  .hero h1{
+    font-size:1.9rem;
+  }
+
+  .hero p{
+    font-size:.95rem;
+  }
+
+  .note1 h2{
+    font-size:1.5rem;
+  }
+
+  .article-note h2,
+  .why-us h2,
+  .appointmentform h2,
+  .career-notes h1,
+  .did-you-text h2{
+    font-size:1.6rem;
+  }
+
+  .content,
+  .career-content,
+  .appointmentform form{
+    padding:20px;
+  }
+
+  .reason{
+    padding:20px;
+  }
+
+  .reason h3{
+    font-size:1.1rem;
+  }
+
+  .reason p{
+    font-size:.95rem;
+  }
 }
