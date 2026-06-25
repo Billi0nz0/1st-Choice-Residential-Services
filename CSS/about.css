@@ -208,7 +208,7 @@ a {
 
   font-size: clamp(2rem, 4vw, 3rem);
 
-  text-align: center;
+  text-align: left;
 
   margin-bottom: 30px;
 }
