@@ -329,7 +329,24 @@ a{
    MOBILE
 ========================= */
 
-@media(max-width:900px){
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .main-header{
+    padding:0 20px;
+  }
+
+  .logo img{
+    height:60px;
+  }
+
+  .logo span{
+    font-size:.85rem;
+  }
+
   .nav-links{
     position:fixed;
     top:85px;
@@ -340,9 +357,9 @@ a{
 
     flex-direction:column;
     justify-content:center;
+    align-items:center;
 
-    background:white;
-
+    background:#fff;
     box-shadow:var(--shadow);
 
     transition:.3s;
@@ -358,29 +375,145 @@ a{
 
   .contact-info{
     grid-template-columns:1fr;
+    gap:30px;
   }
 
   .contact-form{
     max-width:100%;
   }
-}
 
-@media(max-width:480px){
-
-  .contact-section{
-    padding:120px 20px 80px;
-  }
-
-  .contact-section h1{
-    font-size:2.3rem;
+  .map-container{
+    margin:-60px auto 50px;
   }
 
   .map-container iframe{
-    height:350px;
+    height:400px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+  .main-header{
+    height:80px;
+    padding:0 15px;
   }
 
-  .info-cards,
+  .logo{
+    gap:6px;
+  }
+
+  .logo img{
+    height:50px;
+  }
+
+  .logo span{
+    font-size:.72rem;
+    line-height:1.1;
+  }
+
+  /* Hero */
+
+  .contact-section{
+    min-height:55vh;
+    padding:110px 20px 60px;
+  }
+
+  .contact-section h1{
+    font-size:2rem;
+    line-height:1.2;
+  }
+
+  .contact-section p{
+    font-size:1rem;
+    line-height:1.7;
+  }
+
+  /* Map */
+
+  .map-container{
+    width:92%;
+    margin:-40px auto 40px;
+    border-radius:20px;
+  }
+
+  .map-container iframe{
+    height:280px;
+  }
+
+  /* Contact Layout */
+
+  .contact-info{
+    width:92%;
+    gap:25px;
+  }
+
+  .info-cards{
+    padding:25px 20px;
+    text-align:center;
+  }
+
+  .info-cards h2{
+    font-size:1.8rem;
+  }
+
+  .info-cards > p{
+    font-size:.95rem;
+    line-height:1.8;
+  }
+
+  .card {
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+  }
+
+  .card i{
+    margin:0;
+  }
+
+  .card h3{
+    margin:0;
+  }
+
+  .card a{
+    word-break:break-word;
+    font-size:.95rem;
+  }
+
+  /* Form */
+
   .contact-form{
-    padding:25px;
+    padding:25px 20px;
+    border-radius:20px;
+  }
+
+  .contact-form h3{
+    font-size:1.6rem;
+    text-align:center;
+  }
+
+  .kontact{
+    gap:12px;
+  }
+
+  .kontact input,
+  .kontact textarea{
+    padding:13px;
+    font-size:16px; /* prevents iPhone zoom */
+  }
+
+  .kontact button{
+    width:100%;
+    height:52px;
+    font-size:1rem;
+  }
+
+  .kontact p{
+    text-align:center;
+    font-size:.85rem;
   }
 }
